@@ -9,11 +9,12 @@ def newProcess():
         t = input("Enter burst time of process: ")
         beautify = True
         if t == 'exit':
+            print("Exiting...")
             go_on = False
             break
         if int(t) in processes.keys(): processes[int(t)].append(f'P{total_processes}')
         else: processes[int(t)] = [f'P{total_processes}']
-        print(f'P{total_processes} arrived at time {time_counter}')
+        print(f'P{total_processes} arrived at time {time.time() - time_counter}')
         total_processes += 1
  
 def finishProcess():
@@ -26,19 +27,12 @@ def finishProcess():
     if beautify:
         print('\n')
         beautify = False
-    print(f'{name}:({sjt}) finished at time {time_counter}')
- 
-def countTime():
-    global time_counter
-    while True:
-        time.sleep(1)
-        time_counter += 1
+    print(f'{name}:({sjt}) finished at time {time.time() - time_counter}')
 
 processes = dict()
 go_on, beautify = True, True
-time_counter = 0
- 
-Thread(target = countTime).start()
+time_counter = time.time()
+
 Thread(target = newProcess).start()
 print("Enter 'exit' to stop the program")
 while go_on:
