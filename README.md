@@ -1,5 +1,5 @@
 # Processor-scheduling-algorithms
-<h4>Here you can find the implementation of some algorithms used in processor scheduling, implemented in Python.</h4>
+<h4>Here you can find the implementation of some algorithms used in processor scheduling, implemented in Python.This code is implemented to take the burst time of processes in real time and schedules them as they arrive. When a process is finished, it's printed out that it is completed.</h4>
 
 <h3>SJF (Shortest Job First):</h3>
 A scheduling policy that selects the waiting process with the smallest execution time to execute next.
