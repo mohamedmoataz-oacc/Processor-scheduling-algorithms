@@ -28,8 +28,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "f5ec371b-7cac-4f8b-b991-fd228a1e1859",
             "zIndex": -1,
+            "id": "f5ec371b-7cac-4f8b-b991-fd228a1e1859",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -59,6 +59,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -142,11 +143,10 @@
               ]
             },
             "id": "5bbe12e3-1bfd-4d08-b58f-d93dd877df5f",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "System Admin",
-              "description": "",
+              "description": "Hospital employee",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -175,6 +175,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -258,11 +259,10 @@
               ]
             },
             "id": "cf782d51-ec29-4334-a947-dfb6fbaa041b",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Medical Devices",
-              "description": "",
+              "description": "For diagnosing and dosing patients",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -316,6 +316,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -399,7 +400,6 @@
               ]
             },
             "id": "402c8694-37a9-4a76-b8a6-b503abd97df8",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Web Server",
@@ -447,13 +447,6 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 1
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -480,6 +473,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -563,7 +557,6 @@
               ]
             },
             "id": "b28215c7-bac3-4a74-97c3-e9ccd649dd53",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "Database",
@@ -620,6 +613,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -703,11 +697,10 @@
               ]
             },
             "id": "0f1b4cd9-15b5-4a81-945e-32c738190cfd",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Pharmacy System",
-              "description": "",
+              "description": "Hospital inventory",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -761,6 +754,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -844,7 +838,6 @@
               ]
             },
             "id": "164800c5-55a9-4f6a-9adc-19888f91d607",
-            "zIndex": 6,
             "data": {
               "type": "tm.Actor",
               "name": "Generic /\nPrivilege user",
@@ -1133,8 +1126,8 @@
             },
             "vertices": [
               {
-                "x": 1220,
-                "y": 530
+                "x": 1190,
+                "y": 590
               }
             ]
           }
